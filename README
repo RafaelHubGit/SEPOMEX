@@ -1,0 +1,28 @@
+
+# Proyecto de Catálogos de Códigos Postales
+
+Este repositorio contiene los scripts necesarios para crear e insertar las tablas de catálogos de **estados**, **municipios**, **colonias** y **códigos postales** utilizando la información proveniente de SEPOMEX.
+
+## Descripción
+
+El objetivo de este proyecto es organizar y normalizar la información de códigos postales y sus respectivas divisiones geográficas (estados, municipios, y colonias) en una base de datos. Los scripts SQL proporcionados crean las tablas correspondientes y llenan estos catálogos con los datos procesados desde la tabla `CatSepomex`.
+
+### Estructura de las Tablas
+
+- **CatEstados:** Almacena los estados de México.
+- **CatMunicipios:** Almacena los municipios, relacionados con los estados.
+- **CatColonias:** Almacena las colonias, relacionadas con los municipios.
+- **CatCodigosPostales:** Almacena los códigos postales, relacionados con las colonias.
+
+## Requisitos
+
+- SQL Server
+- Docker (Opcional)
+
+## Instrucciones de Uso
+
+1. **Crear las Tablas:**
+   Ejecuta el script `script.sql` para crear las tablas necesarias en tu base de datos.
+
+Nota: Se debe ejecutar paso a paso tal cual esta el script.
+  

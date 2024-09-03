@@ -41,6 +41,8 @@ SELECT DISTINCT c_estado, d_estado
 FROM CatSepomex
 ORDER BY c_estado;
 
+SET IDENTITY_INSERT CatEstados ON;
+
 
 
 

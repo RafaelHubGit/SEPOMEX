@@ -1,0 +1,12 @@
+# Usa la imagen oficial de SQL Server
+FROM mcr.microsoft.com/mssql/server:2022-latest
+
+# Establece las variables de entorno necesarias para configurar SQL Server
+ENV SA_PASSWORD=TuPassword123!
+ENV ACCEPT_EULA=Y
+
+# Expon el puerto 1433 (puerto por defecto de SQL Server)
+EXPOSE 1433
+
+# Inicia SQL Server
+CMD ["/opt/mssql/bin/sqlservr"]
